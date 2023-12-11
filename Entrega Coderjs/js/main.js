@@ -35,7 +35,7 @@ if (bienvenida == "a" || bienvenida == "Aeróbico") {
 let agregar = prompt(
   "Armemos tu segundo día de entrenamiento \n A- Aerobico con abdominales\n B- Aerobico más corto \n C- Fuerza con aerobico \n D- Fuerza sin abdominales"
 );
-if (agregar == "a" || agregar == "Aerobico con abdominales") {
+if (agregar === "a" || agregar =="Aerobico con abdominales") {
   aerobico.push(
     "\n\nCircuito de abdominales\n 20 abdominales agrupados\n 30 bajos \n 50 abdominales bicicleta "
   );
