@@ -24,9 +24,9 @@ let bienvenida = prompt(
     "A. Aerobico \nB. Fuerza "
 );
 
-if (bienvenida == "a" || bienvenida == "Aeróbico") {
+if (bienvenida === "a" || bienvenida === "Aeróbico") {
   alert(nombre + " acá esta tu entrenamiento aeróbico \n" + aerobico);
-} else if (bienvenida == "b" || bienvenida == "Fuerza") {
+} else if (bienvenida === "b" || bienvenida === "Fuerza") {
   alert(nombre + " acá esta tu entrenamiento de fuerza \n" + fuerza);
 } else {
   alert("Opción no válida");
@@ -35,7 +35,7 @@ if (bienvenida == "a" || bienvenida == "Aeróbico") {
 let agregar = prompt(
   "Armemos tu segundo día de entrenamiento \n A- Aerobico con abdominales\n B- Aerobico más corto \n C- Fuerza con aerobico \n D- Fuerza sin abdominales"
 );
-if (agregar === "a" || agregar =="Aerobico con abdominales") {
+if (agregar === "a" || agregar ==="Aerobico con abdominales") {
   aerobico.push(
     "\n\nCircuito de abdominales\n 20 abdominales agrupados\n 30 bajos \n 50 abdominales bicicleta "
   );
@@ -43,20 +43,20 @@ if (agregar === "a" || agregar =="Aerobico con abdominales") {
     "Acá esta tu segundo día de entrenamiento aerobico con abdominales \n" +
       aerobico
   );
-} else if (agregar == "b" || agregar == "Aerobico más corto") {
+} else if (agregar === "b" || agregar === "Aerobico más corto") {
   aerobico.pop(
     "\n\nCircuito de abdominales\n 20 abdominales agrupados\n 30 bajos \n 50 abdominales bicicleta "
   );
   alert(
     "Acá esta tu segundo día de entrenamiento Aerobico más corto \n" + aerobico
   );
-} else if (agregar == "c" || agregar == "Fuerza con aerobico") {
+} else if (agregar === "c" || agregar === "Fuerza con aerobico") {
   fuerza.unshift("\n15 minutos de cinta\n\n");
   alert(
     "Acá esta tu segundo día de entrenamiento de Fuerza con aerobico \n" +
       fuerza
   );
-} else if (agregar == "d" || agregar == "Fuerza sin abdominales") {
+} else if (agregar === "d" || agregar === "Fuerza sin abdominales") {
   fuerza.shift(
     "\n\nCircuito de abdominales\n 20 abdominales agrupados\n 30 bajos \n 50 abdominales bicicleta "
   );
